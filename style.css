@@ -19,7 +19,7 @@ a:hover {
   font-style: italic;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 700px) {
   body, html, p {
     font-size: .9rem;
   }
@@ -28,27 +28,35 @@ a:hover {
     font-size: 1.25rem;
   }
 
-  h4, h6 {
-    font-size: 1.15rem;
+  h4 {
+    font-size: 1.1rem;
   }
 
   h5 {
-    font-size: 1rem;
+    font-size: .8rem;
+  }
+
+  h2 {
+    font-size: 1rem!important;
   }
 
   .mtx-1 {
     margin-top: 1rem;
   }
 
+  .container-width {
+    max-width: 100%;
+  }
+
+  .mini {
+    font-size: .75rem!important;
+  }
+
 }
 
 h3, h4, h5 {
-  font-family: "antarctican-mono", sans-serif;
+  font-family: "antarctican-mono", monospace, sans-serif;
   color: #2a2a2a;
-}
-
-h6 {
-  font-size: 1.25rem;
 }
 
 h3 {
@@ -56,13 +64,18 @@ h3 {
   font-weight: 600;
 }
 
+h2 {
+  font-size: 1.35rem;
+}
+
 /* custom classes */
 .footer-text {
   font-size: .8rem;
 }
 
-.logo {
-  width: 450px;
+.logo,
+logo img {
+  max-width: 450px;
 }
 
 .mini {
@@ -70,10 +83,15 @@ h3 {
   font-style: italic;
 }
 
+/* margins and container width */
 .mb {
   margin-bottom: 5rem;
 }
 
 .mtx-1 {
-  margin-top: 5rem;
+  margin-top: 3.5rem;
+}
+
+.container-width {
+  max-width: 80%;
 }
