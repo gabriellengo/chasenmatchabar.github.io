@@ -1,4 +1,7 @@
 <style>
+/* font import */
+@import url("https://use.typekit.net/xnk0ijq.css");
+
 body, html, p {
   font-family: "antarctican-mono", monospace;
   color: #2a2a2a;
