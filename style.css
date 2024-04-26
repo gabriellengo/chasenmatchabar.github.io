@@ -1,12 +1,12 @@
 <style>
-/* font import */
-@import url("https://use.typekit.net/xnk0ijq.css");
-
-body, html, p {
-  font-family: "antarctican-mono", monospace;
-  color: #2a2a2a;
+p {
+  font-family: "Reddit Mono", monospace!important;
+  color: #ffffff;
 }
 
+h3 {
+  color: red;
+}
 .logo {
   width: 500px;
 }
