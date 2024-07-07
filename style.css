@@ -6,6 +6,7 @@ body, html, p {
   font-family: "antarctican-mono", monospace, sans-serif;
   font-style: normal;
   color: #2a2a2a;
+  line-height: 1.5rem;
 }
 
 a {
@@ -53,7 +54,7 @@ a:hover {
   }
 }
 
-h3, h4, h5 {
+h3, h4, h5, h7 {
   font-family: "antarctican-mono", monospace, sans-serif;
   color: #2a2a2a;
 }
@@ -63,8 +64,30 @@ h3 {
   font-weight: 600;
 }
 
+h7 {
+  text-transform: lowercase;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
 h2 {
   font-size: 1.35rem;
+}
+
+button {
+  background-color: #207747;
+  color: #fffff;
+  width: 250px;
+  padding: .5rem;
+  border-radius: 10rem;
+}
+
+button a {
+  color: #ffffff;
+}
+
+button a:hover {
+  font-style: normal;
 }
 
 /* custom classes */
@@ -74,7 +97,7 @@ h2 {
 
 .logo,
 logo img {
-  max-width: 450px;
+  max-width: 300px;
 }
 
 .mini {
@@ -93,4 +116,8 @@ logo img {
 
 .container-width {
   max-width: 80%;
+}
+
+.about-image {
+  width: 250px;
 }
