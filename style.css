@@ -10,13 +10,13 @@ body, html, p {
 }
 
 a {
-  color: #3e574e;
+  color: #1451eb;
   text-decoration: none
 }
 
 a:hover {
   text-decoration: none;
-  color: #3e574e;
+  color: #1451eb;
   font-style: italic;
 }
 
