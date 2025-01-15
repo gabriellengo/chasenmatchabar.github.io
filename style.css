@@ -1,9 +1,13 @@
 /* import styles */
-@import url("https://use.typekit.net/xnk0ijq.css");
+/* antarctican mono */
+@import url("https://use.typekit.net/xlq1wls.css");
+
+/* inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 /* defaults */
 body, html, p {
-  font-family: "antarctican-mono", monospace, sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   color: #2a2a2a;
   line-height: 1.5rem;
@@ -30,7 +34,8 @@ a:hover {
   }
 
   h4 {
-    font-size: 1.1rem;
+    font-weight: 600;
+    font-size: .9rem;
   }
 
   h5 {
@@ -54,20 +59,29 @@ a:hover {
   }
 }
 
-h3, h4, h5, h7 {
+h3, h5, h7 {
   font-family: "antarctican-mono", monospace, sans-serif;
   color: #2a2a2a;
 }
 
 h3 {
-  text-transform: uppercase;
+  font-weight: 500;
+}
+
+h4 {
   font-weight: 600;
+  font-size: 1.35rem;
 }
 
 h7 {
   text-transform: lowercase;
   font-weight: 600;
   font-size: 1.25rem;
+}
+
+h8 {
+  font-size: 1rem;
+  letter-spacing: .15rem;
 }
 
 h2 {
