@@ -18,7 +18,7 @@ function showClassics() {
 function showSpecials() {
   menuClassics.style.display = "none";
   menuSpecial.style.display ="block";
-  menuKettl.style.display = "none;"
+  menuKettl.style.display ="none";
   btnClassics.classList.replace("menu-button-active", "menu-button");
   btnSpecial.classList.replace("menu-button", "menu-button-active");
   btnKettl.classList.replace("menu-button-active", "menu-button");

@@ -6,56 +6,181 @@
     <meta name="description" content="">
     <title>chasen matcha bar | menu</title>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="icon" type="image/x-icon" href="https://gabriellengo.github.io/chasenmatchabar.github.io/images/favicon.svg">
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
   </head>
 
   <body>
-    <!-- body -->
-    <div class="container-fluid container-width px-1 p-0 mb-5 mtx-1">
-      <!-- logo -->
-      <div class="row">
-        <div class="col-12">
-          <img alt="chasen matcha bar logo" src="https://raw.githubusercontent.com/gabriellengo/chasenmatchabar.github.io/main/images/horizontal_3.svg" class="logo">
-        </div>
-      </div>
 
-      <!-- hours, location, links -->
-      <div class="row mt-4">
-        <div class="col-12">
-          <p>
-            learn more<br>
-            <b><a href="https://chasenmatchabar.com">return to menu</a></b>
-      </p>
-        </div>
-      </div>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid">
+    <div class="nav-display">
+      <a class="navbar-brand" href="#"><img src="https://github.com/gabriellengo/chasenmatchabar.github.io/blob/main/images/chasen_full_logo_lg.png?raw=true" alt="Logo" width="150px"></a>
+    </div><!--
+      <div class="nav-display">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/">menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">about</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/merch">merch</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact">contact us</a>
+        </li>
+      </ul>
+    </div>-->
+  </div>
+</nav>
 
-      <!-- drink menu start -->
-      <!-- lol -->
-      <div class="row mt-5">
-        <div class="col-12">
-          <h3>about</h3>
-          <p>
-            lil' matcha shop in the oak cliff <br>
-            weekends 9am-3pm <br>
-          </p>
-        </div>
-      </div>
+<div class="flex-container">
+  <div class="column column-left">
+    <img class="left-image" src="https://github.com/gabriellengo/chasenmatchabar.github.io/blob/main/images/IMG_0115.jpg?raw=true">
+  </div>
 
-      <!-- footer -->
-      <div class="row mt-5">
-        <div class="col-12">
-          <p>© 2025 chasen matcha bar. all rights reserved.</p>
-        </div>
-      </div>
-
-    <!-- container end -->
+  <div class="column column-right">
+    <h3>menu</h3>
+    <div class="mini-menu">
+      <button class="menu-button-active" id="classics" onclick="showClassics()">classics</button>
+      <button class="menu-button" id="specialties" onClick="showSpecials()">specialties</button>
+      <button class="menu-button" id="kettl" onClick="showKettl()">kettl offerings</button>
     </div>
 
+    <!-- classics -->
+    <div class="menu-visible" id="menu-1">
+      <div class="menu-item">
+        <h4>house matcha latte</h4>
+        <p>
+          matcha + milk <br>
+          a smooth and bright yabukita blend
+        </p>
+      </div>
+
+      <div class="menu-item">
+        <h4>signature matcha latte</h4>
+        <p>
+          matcha + milk <br>
+          a vegetal and nutty blend from yame city
+        </p>
+      </div>
+
+      <div class="menu-item">
+        <h4>cortado<span class="badge hot-ice">6 oz. hot</span></h4>
+        <p>matcha + 3 oz. of steamed milk</p>
+      </div>
+
+      <div class="menu-item">
+        <h4>americano</h4>
+        <p>matcha or houjicha + water</p>
+      </div>
+
+      <div class="menu-item">
+        <h4>houjicha latte</h4>
+        <p>roasted matcha + milk</p>
+      </div>
+    </div>
+
+
+    <!-- specialties -->
+    <div class="menu-container menu-hidden" id="menu-2">
+      <div class="menu-item">
+        <h4>strawberry matcha</h4>
+        <p>matcha + milk + house-made strawberry compote + cream top (optional)</p>
+      </div>
+
+      <div class="menu-item">
+        <h4>einspannner<span class="badge hot-ice">12 oz. only</span></h4>
+        <p>matcha + vanilla + milk + cream top + matcha drizzle + matcha powder + maldon sea salt</p>
+      </div>
+
+      <div class="menu-item">
+        <h4>miso caramel<span class="badge hot-ice">hot or iced</span></h4>
+        <p>houjicha-mocha blend + house-made miso caramel + milk + cocoa powder</p>
+      </div>
+
+      <div class="menu-item">
+        <h4>coco-jicha<span class="badge hot-ice">hot or iced</span></h4>
+        <p>
+          houjicha + vanilla + milk + cream top + cocoa powder
+          <br>winter seasonal includes peppermint syrup (optional)
+        </p>
+      </div>
+
+      <div class="menu-item">
+        <h4>bougie berry</h4>
+        <p>
+          matcha + house-made raspberry-blackberry compote + milk
+        </p>
+      </div>
+
+      <div class="menu-item">
+        <h4>taro cream top</h4>
+        <p>
+          matcha + vanilla + milk + taro cream top + taro dust
+        </p>
+      </div>
+
+      <div class="menu-item">
+        <h4>oreo cream top</h4>
+        <p>
+        matcha + vanilla + milk + cream top + oreo crumbs
+        </p>
+      </div>
+    </div>
+
+  <!-- kettl -->
+  <div class="menu-container menu-hidden" id="menu-3">
+    <div class="menu-item">
+      <h4>hinata matcha</h4>
+      <p>
+        rich and nutty blend from yame<br>
+        notes of white sesame and lilac
+      </p>
+    </div>
+
+    <div class="menu-item">
+      <h4>satsuma matcha</h4>
+      <p>
+        single-cultivar from  kagoshima with a fresh with a spicy aroma<br>
+        notes of spring greens and white flowers
+      </p>
+    </div>
+  </div>
+</div>
+
+<!--
+<div class="container">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center mb-5">
+    <div class="col-md-4 d-flex align-items-center">
+      <span class="text-muted footer-txt">© 2026 chasen matcha bar | dallas, tx</span>
+    </div>
+
+    footer socials
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+      <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+      <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+      <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+    </ul>
+
+  </footer>
+</div>
+-->
+
     <!-- scripts -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
   </body>
 </html>

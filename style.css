@@ -139,7 +139,7 @@ button, a {
   }
 
   .navbar-brand>img {
-    width: 100px;
+    width: 200px;
     padding: 7px 14px 7px 0; /* padding for image ... text needs no padding */
   }
 
